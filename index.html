@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Frontend mentor| Manage landing page</title>
+</head>
+<body class="w-full min-h-screen overflow-x-auto  relative space-y-10 md:space-y-20 2xl:space-y-10 font-Be-Vietnam">
+    <header class="w-full h-screen flex flex-col items-center">
+        <nav class="w-full max-w-[90%] xl:max-w-[80%] h-[3.5rem] md:h-[5rem]  flex justify-between items-center mx-auto">
+           
+                <a href="#"><img src="./images/logo.svg" alt="logo"  class=""></a>
+                
+                <div class="hidden   h-full md:flex flex-row items-center justify-center ">
+                    
+                    <ul class="h-full flex justify-center items-center md:gap-5 xl:gap-10">
+                        <li><a href="#" class=" md:text-[0.7rem] xl:text-[1rem] md text-Deep-Gray font-Be-Vietnam mx-auto  hover:opacity-80 hover:ease-in hover:duration-200 modal-lnk">Pricing</a></li>
+                        <li><a href="#" class=" md:text-[0.7rem] xl:text-[1rem] text-Deep-Gray font-Be-Vietnam mx-auto  hover:opacity-80 hover:ease-in hover:duration-200 modal-lnk">Product</a></li>
+                        <li><a href="#" class=" md:text-[0.7rem] xl:text-[1rem] text-Deep-Gray font-Be-Vietnam mx-auto  hover:opacity-80 hover:ease-in hover:duration-200 modal-lnk">About Us</a></li>
+                        <li><a href="#" class=" md:text-[0.7rem] xl:text-[1rem] text-Deep-Gray font-Be-Vietnam mx-auto  hover:opacity-80 hover:ease-in hover:duration-200 modal-lnk">Careers</a></li>
+                        <li><a href="#" class=" md:text-[0.7rem] xl:text-[1rem] text-Deep-Gray font-Be-Vietnam mx-auto  hover:opacity-80 hover:ease-in hover:duration-200 modal-lnk">Community</a></li>
+                    </ul> 
+
+            
+                </div>
+
+             <a href="#" class=" hidden md:flex  md:text-[0.7rem] xl:text-[1rem] bg-Deep-Orange hover:opacity-80 hover:ease-in hover:duration-200 hover:scale-95 px-8 py-2 rounded-full text-white font-Be-Vietnam shadow-gray-400 shadow-md  modal-lnk">Get Started</a>
+
+            
+            
+
+
+
+            
+
+            <button id="mobilemenuBtn" class="mobile-menu w-10 h-10 flex flex-col items-center justify-center gap-1.5 mr-3 md:hidden">
+                <span class="w-8 h-0.5 bg-black hamburger-top"></span>
+                <span class="w-8 h-0.5 bg-black hamburger-middle"></span>
+                <span class="w-8 h-0.5 bg-black hamburger-bottom"></span>
+            </button>
+
+        </nav>
+
+        <!-- modal -->
+        <div class="modal w-screen h-screen absolute top-0 left-0  bg-[linear-gradient(to_top,rgba(116,116,116,1)_0%,rgba(239,239,239,0)_100%)]  z-10 hidden">
+            <div class="modal-btn-container w-[90%] h-[3.5rem]  flex flex-row justify-end items-center mr-3 mx-auto">
+                <button id="modalBtn" class="mobile-menu w-10 h-10  flex flex-col items-center justify-center gap-1.5 mr-3 open md:hidden">
+                <span class="w-8 h-0.5 bg-Deep-Blue hamburger-top"></span>
+                <span class="w-8 h-0.5 bg-Deep-Blue hamburger-middle"></span>
+                <span class="w-8 h-0.5 bg-Deep-Blue hamburger-bottom"></span>
+            </button>
+
+            </div>
+            
+
+
+        </div>
+
+        <!-- mobile menu links -->
+
+        <div id="mobile-links" class="w-[90%] h-[45%] bg-white z-20 absolute top-[5rem] mx-auto hidden md:hidden flex-col items-center justify-center gap-5 rounded-md">
+            <a href="#" class="text-[1rem] text-Deep-Gray font-Be-Vietnam mx-auto modal-lnk">Pricing</a>
+            <a href="#" class="text-[1rem] text-Deep-Gray font-Be-Vietnam mx-auto modal-lnk">Product</a>
+            <a href="#" class="text-[1rem] text-Deep-Gray font-Be-Vietnam mx-auto modal-lnk">About Us</a>
+            <a href="#" class="text-[1rem] text-Deep-Gray font-Be-Vietnam mx-auto modal-lnk">Careers</a>
+            <a href="#" class="text-[1rem] text-Deep-Gray font-Be-Vietnam mx-auto modal-lnk">Community</a>
+
+        </div> 
+
+
+        <section class="hero-introduction w-full max-w-[90%] xl:max-w-[80%] flex flex-col-reverse xl:flex-row h-full">
+            <div class="hero-introduction w-full xl:w-1/2 h-1/2 xl:h-full flex flex-col justify-center  md:items-center xl:items-start gap-y-10 md:gap-y-15  ">
+
+               
+
+                  <h1 class="text-3xl md:text-5xl xl:6xl 2xl:text-7xl md:max-w-[90%] xl:max-w-[85%] text-Deep-Blue font-Be-Vietnam font-bold mx-auto xl:mx-0 text-center xl:text-start ">
+                        Bring everyone together to build better products
+                    </h1>
+
+                    <p class="text-lg md:text-2xl leading-relaxed font-Be-Vietnam text-gray-400 md:max-w-[80%] text-center xl:text-start ">
+                         Manage makes it simple for software teams to plan day-to-day 
+                         tasks while keeping the larger team goals in view.
+                    </p>
+
+
+                    <a href="#" class="  md:text-[0.7rem] xl:text-[1rem] bg-Deep-Orange hover:opacity-80 hover:ease-in hover:duration-200 hover:scale-95 px-8 py-2 md:px-15 md:py-4 rounded-full text-white font-Be-Vietnam shadow-gray-400 shadow-md w-fit mx-auto xl:mx-0 modal-lnk">Get Started</a>
+
+            </div>
+
+            <div class="hero-img w-full xl:w-1/2 h-1/2 xl:h-full flex justify-center items-center overflow-y-clip ">
+
+                  <img src="./images/illustration-intro.svg" alt="hero-img" class="w-full max-w-md xl:max-w-4xl h-auto md:max-h-[600px]   object-center object-contain overflow-y-hidden ">
+
+            </div>
+          
+            
+
+        </section>
+
+        
+    </header>
+
+
+    <main class="h-screen min-h-screen w-full space-y-10 md:space-y-20 ">
+        <section id="why" class="w-full max-w-[90%] xl:max-w-[80%]  h-auto mx-auto flex flex-col md:gap-y-20 xl:gap-y-0 xl:flex-row">
+
+            <div class="w-full xl:w-1/2 h-auto md:h-[400px] xl:h-full  space-y-5 md:space-y-10">
+                <h2 class="  text-3xl md:text-4xl xl:4xl 2xl:text-5xl md:max-w-[80%] xl:max-w-[85%] text-Deep-Blue font-Be-Vietnam font-bold mx-auto text-center xl:text-start xl:mx-0 " >
+
+                    What’s different about Manage?
+
+                </h2>
+
+                <p class="text-gray-400 text-sm md:text-xl lg:text-2xl xl:text-xl mx-auto xl:mx-0 text-center xl:text-start font-Be-Vietnam md:max-w-[75%] leading-relaxed  md:leading-loose xl:leading-relaxed mb-10 md:mb-0">
+                    Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. 
+                </p>
+
+             </div>
+
+             <!-- Reasons for manage app -->
+
+              <div class="w-full xl:w-1/2 h-auto md:h-auto xl:h-full space-y-5 md:space-y-10  md:flex md:flex-col md:gap-y-5">
+
+                <!-- Reason 1 -->
+
+                 <!-- Small screens -->
+                  <div class="reasons-container w-full md:flex gap-x-5">
+                    <div class="title-head w-full h-10 flex gap-x-5 bg-[#f9eeeb] md:bg-white items-center md:max-w-fit mb-5">
+
+                   
+                        <div class="flex justify-center items-center rounded-full w-15 h-full bg-orange-400 font-Be-Vietnam text-black font-semibold ">01</div>
+                        <h3 class="text-base md:text-2xl text-black font-semibold md:hidden">Track company-wide progress</h3>
+
+                    </div>
+
+                    <div class=" md:hidden md:w-full space-y-10">
+                   
+                        <p class=" md:hidden text-gray-400 text-sm md:text-2xl  text-start font-Be-Vietnam  leading-loose mb-10 md:mb-0">
+                            See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+                        </p>
+
+                    </div>
+
+                    <!-- For  big screens -->
+
+                    <div class=" hidden md:block md:w-full space-y-5 2xl:px-5">
+                        <h3 class="text-base md:text-2xl text-black font-semibold hidden md:block">Track company-wide progress</h3>
+                        <p class=" hidden md:block text-gray-400 text-sm md:text-xl  text-start font-Be-Vietnam md:max-w-full  2xl:max-w-[90%] md:leading-loose        xl:leading-relaxed     mb-10 md:mb-0">
+                            See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+                        </p>
+
+                    </div>
+
+
+                  </div>
+
+                
+
+                <!-- Reason 2 -->
+
+
+                 <div class="reasons-container w-full md:flex gap-x-5 ">
+                    <div class="title-head w-full h-10 flex gap-x-5 bg-[#f9eeeb] md:bg-white items-center md:max-w-fit mb-5 ">
+
+                   
+                        <div class="flex justify-center items-center rounded-full w-15 h-full bg-orange-400 font-Be-Vietnam text-black font-semibold ">02</div>
+                        <h3 class="text-base md:text-2xl text-black font-semibold md:hidden">Advanced built-in reports</h3>
+
+                    </div>
+
+                    <div class=" md:hidden md:w-full space-y-10">
+                   
+                        <p class=" md:hidden text-gray-400 text-sm md:text-2xl  text-start font-Be-Vietnam  leading-loose mb-10 md:mb-0">
+                              See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+                        </p>
+
+                    </div>
+
+                    <!-- For  big screens -->
+
+                    <div class=" hidden md:block md:w-full space-y-5 2xl:px-5">
+                        <h3 class="text-base md:text-2xl text-black font-semibold hidden md:block">Advanced built-in reports</h3>
+                        <p class=" hidden md:block text-gray-400 text-sm md:text-xl  text-start font-Be-Vietnam md:max-w-full  2xl:max-w-[90%] md:leading-loose        xl:leading-relaxed     mb-10 md:mb-0">
+                            See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+                        </p>
+
+                    </div>
+
+
+                  </div>
+
+
+                  <!-- Reason 3 -->
+
+                   <div class="reasons-container w-full md:flex gap-x-5">
+                    <div class="title-head w-full h-10 flex gap-x-5 bg-[#f9eeeb] md:bg-white items-center md:max-w-fit mb-5">
+
+                   
+                        <div class="flex justify-center items-center rounded-full w-15 h-full bg-orange-400 font-Be-Vietnam text-black font-semibold ">03</div>
+                        <h3 class="text-base md:text-2xl text-black font-semibold md:hidden">Everything you need in one place</h3>
+
+                    </div>
+
+                    <div class=" md:hidden md:w-full space-y-10">
+                   
+                        <p class=" md:hidden text-gray-400 text-sm md:text-2xl  text-start font-Be-Vietnam  leading-loose mb-10 md:mb-0">
+                              Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+                        </p>
+
+                    </div>
+
+                    <!-- For  big screens -->
+
+                    <div class=" hidden md:block md:w-full space-y-5 2xl:px-5">
+                        <h3 class="text-base md:text-2xl text-black font-semibold hidden md:block">Everything you need in one place</h3>
+                        <p class=" hidden md:block text-gray-400 text-sm md:text-xl  text-start font-Be-Vietnam md:max-w-full  2xl:max-w-[90%] md:leading-loose        xl:leading-relaxed     mb-10 md:mb-0">
+                            Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+                        </p>
+
+                    </div>
+
+
+                  </div>
+
+
+
+                
+
+                
+
+                
+
+                
+
+                
+
+             </div>
+
+                        
+             
+
+        </section>
+
+        <!-- Uniqueness -->
+
+
+        <section id="uniqueness" class="w-screen max-w-[90%] xl:max-w-full overflow-x-hidden mx-auto space-y-15 md:space-y-20" >
+
+            <h2 class="text-3xl md:text-4xl 2xl:text-5xl text-Deep-Blue text-center font-bold md:mb-30 xl:mb-30">
+                What they've said
+
+            </h2>
+
+            <div class="slide-container w-full h-auto md:h-full flex flex-row flex-nowrap scrollbar-hide gap-x-10 xl:gap-x-20 justify-center xl:justify-start      ">
+
+                <!-- Testimonial 1 -->
+
+                <div id="testimonial-1" class="testimonial-card  w-screen max-w-[90%] md:min-w-[35rem] h-auto xl:h-[20rem] space-y-5 md:space-y-10 relative flex flex-col items-center pt-12">
+
+                    <div class="testimonial-img-container w-20 h-20 md:w-20 md:h-20  rounded-full absolute top-0 right-[50%] transform translate-x-[50%] -translate-y-[50%] space-y-5 flex items-center justify-center">
+                        <img src="./images/avatar-anisha.png" class="rounded-full w-fit h-fit md:h-20 md:w-20 object-center " alt="Anisha">
+
+                       
+
+                        
+
+                    </div>
+
+                     <h4 class="manager-name font-bold text-center ">
+                            Anisha Li
+                        </h4>
+
+                    
+
+                    <p class="testimonial-text text-gray-400 text-sm md:text-xl text-center leading-loose">
+                        “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+
+                    </p>
+
+                </div>
+                <!-- Testimonial 2 -->
+
+
+                <div id="testimonial-2" class="testimonial-card  hidden w-full max-w-[90%] md:min-w-[35rem] h-auto xl:h-[20rem]  space-y-5 md:space-y-10 relative xl:flex flex-col items-center pt-12">
+
+                    <div class="testimonial-img-container w-20 h-20 md:w-20 md:h-20  rounded-full absolute top-0 right-[50%] transform translate-x-[50%] -translate-y-[50%] space-y-5 flex items-center justify-center">
+                        <img src="./images/avatar-ali.png" class="rounded-full w-15 h-15 md:h-20 md:w-20 object-center " alt="Anisha">
+
+                    
+                        
+
+                    </div>
+
+                     <h4 class="manager-name font-bold text-center ">
+                            Ali Bravo
+                        </h4>
+
+                    
+
+                    <p class="testimonial-text text-gray-400 text-sm md:text-xl text-center leading-loose">
+                        “We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”
+                    </p>
+
+                </div>
+
+                <!-- Testimonial 3 -->
+
+                <div id="testimonial-3" class="testimonial-card hidden w-full max-w-[90%] md:min-w-[35rem] h-auto xl:h-[20rem]  space-y-5 md:space-y-10 relative xl:flex flex-col items-center pt-12">
+
+                    <div class="testimonial-img-container w-20 h-20 md:w-20 md:h-20  rounded-full absolute top-0 right-[50%] transform translate-x-[50%] -translate-y-[50%] space-y-5 flex items-center justify-center">
+                        <img src="./images/avatar-richard.png" class="rounded-full w-15 h-15 md:h-20 md:w-20 object-center " alt="Anisha">
+
+                       
+
+                        
+
+                    </div>
+
+                     <h4 class="manager-name font-bold text-center ">
+                            Richard Watts
+                        </h4>
+
+                    
+
+                    <p class="testimonial-text text-gray-400 text-sm md:text-xl text-center leading-loose">
+                         “Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”
+
+                    </p>
+
+                </div>
+
+                <!-- Testimonial 4 -->
+
+                <div id="testimonial-4" class="testimonial-card hidden w-full max-w-[90%] md:min-w-[35rem] h-auto xl:h-[20rem]  space-y-5 md:space-y-10 relative xl:flex flex-col items-center pt-12">
+
+                    <div class="testimonial-img-container w-20 h-20 md:w-20 md:h-20  rounded-full absolute top-0 right-[50%] transform translate-x-[50%] -translate-y-[50%] space-y-5 flex items-center justify-center">
+                        <img src="./images/avatar-shanai.png" class="rounded-full w-15 h-15 md:h-20 md:w-20 object-center " alt="Anisha">
+
+                       
+
+                        
+
+                    </div>
+
+                     <h4 class="manager-name font-bold text-center ">
+                            Shannai Gough
+                        </h4>
+
+                    
+
+                    <p class="testimonial-text text-gray-400 text-sm md:text-xl text-center leading-loose">
+                        “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”
+
+                    </p>
+
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+             <a href="#" class=" block md:text-[0.7rem] xl:text-[1rem] bg-Deep-Orange hover:opacity-80 hover:ease-in hover:duration-200 hover:scale-95 px-8 py-2 md:px-15 md:py-4 rounded-full text-white font-Be-Vietnam shadow-gray-400 shadow-md w-fit mx-auto mt-0  ">Get Started</a>
+
+         
+
+           
+
+
+
+
+
+        </section>
+        
+
+    </main>
+    <footer></footer>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+

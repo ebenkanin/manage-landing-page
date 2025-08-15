@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import 'tailwindcss';
+
+@theme{
+    --font-Be-Vietnam: "Be Vietnam Pro", sans-serif;
+    --color-Deep-Orange: hsl(12,88%,59%);
+    --color-Deep-Blue:hsl(228,39%,23%);
+    --color-Deep-Gray:hsl(233,12%,13%);
+    --color-Light-Gray:hsl(0,0%,98%);
+    --color-Light-Orange:hsl(13,100%,96%);
+}
+
+.hamburger-top, .hamburger-bottom, .hamburger-middle{
+transform: rotate(0) translateY(0) translateX(0);
+transition:all 0.5s ease-in-out 0s;
+
+}
+
+
+.open .hamburger-top{
+    transform:rotate(90deg);
+}
+
+.open .hamburger-middle{
+    transform:rotate(90deg);
+}
+
+.open .hamburger-bottom{
+    transform:rotate(90deg);
+}
+
+.open .hamburger-top{ 
+    transform: rotate(45deg) translateY(3px) translateX(3px) ;
+    transition: all 0.5s;
+
+
+}
+
+.open .hamburger-middle{
+    transition: all 0.5s;
+    display:none;
+}
+
+.open .hamburger-bottom{ 
+    transform: rotate(-45deg) translateY(-3px) translateX(3px);
+    transition: all 0.5s;
+}
+
+/* For modal */
+
+
+.modal-btn-container .open .hamburger-top{
+    transform:rotate(90deg);
+}
+
+.modal-btn-container .open .hamburger-middle{
+    transform:rotate(90deg);
+}
+
+.modal-btn-container .open .hamburger-bottom{
+    transform:rotate(90deg);
+}
+
+.modal-btn-container .open .hamburger-top{ 
+    transform: rotate(45deg) translateY(3px) translateX(3px) ;
+    transition: all 0.5s;
+
+
+}
+
+ .modal-btn-container .open .hamburger-middle{
+    transition: all 0.5s;
+    display:none;
+}
+
+.modal-btn-container .open .hamburger-bottom{ 
+    transform: rotate(-45deg) translateY(-3px) translateX(3px);
+    transition: all 0.5s;
+}
+
+
+.move {
+    transform: translateX(-35rem);
+}
