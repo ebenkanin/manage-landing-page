@@ -2,6 +2,7 @@ const mobileMenuBtn = document.getElementById('mobilemenuBtn');
 const modalBtn = document.getElementById('modalBtn');
 const modal = document.querySelector('.modal');
 const mobileLinks = document.getElementById('mobile-links')
+const ctaMobile =document.getElementById('cta-mobile')
 
 const modalLnk = document.querySelectorAll('.modal-lnk')
 
@@ -52,6 +53,17 @@ for(let i=0; i<modalLnk.length; i++){
 
     })
 }
+
+ctaMobile.addEventListener('click',function(){
+    
+    modalBtn.classList.toggle('hidden')
+    modal.classList.add('hidden')
+    mobileMenuBtn.classList.remove('hidden','open')
+    mobileLinks.classList.add('hidden')
+
+})
+
+
 
 const images =[]
 
