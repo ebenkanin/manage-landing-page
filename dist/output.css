@@ -1027,6 +1027,11 @@
       width: 80%;
     }
   }
+  .xl\:w-\[95\%\] {
+    @media (width >= 80rem) {
+      width: 95%;
+    }
+  }
   .xl\:max-w-4xl {
     @media (width >= 80rem) {
       max-width: var(--container-4xl);
