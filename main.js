@@ -6,6 +6,36 @@ const ctaMobile =document.getElementById('cta-mobile')
 
 const modalLnk = document.querySelectorAll('.modal-lnk')
 
+const testimonialCard = document.querySelectorAll('.testimonial-card')
+
+const cardWidth = testimonialCard[0].offsetWidth;
+
+
+
+
+const slide =document.querySelector('.slide-container')
+
+let slideIndex = 0
+
+let interval = setInterval(run, 4000)
+
+function run(){
+    slideIndex++
+    moveSlide()
+}
+
+function moveSlide(){
+    
+    if(slideIndex >testimonialCard.length-1){
+        slideIndex = 0
+    } else if(slideIndex< 0){
+        slideIndex = testimonialCard.length-1
+    }
+
+    slide.style.transform = `translateX(${-slideIndex * cardWidth}px)`
+
+    
+}
 // adding event listener to the mobile btn
 
 mobileMenuBtn.addEventListener('click', function openMobileMenu(){
@@ -65,10 +95,4 @@ ctaMobile.addEventListener('click',function(){
 
 
 
-const images =[]
 
-images[0] = 'image1.jpg'
-images[1] = 'image2.jpg'
-images[2] = 'image3.jpg'
-
-console.log(images)

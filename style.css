@@ -84,3 +84,15 @@ transition:all 0.5s ease-in-out 0s;
 .move {
     transform: translateX(-35rem);
 }
+
+
+.slide-container{
+    transform:translateX(0);
+    transition:transform 0.5s ease-in-out;
+}
+
+
+/* #testimonial-1{
+    transform:translateX(0);
+    transition:transform 0.5s ease-in-out;
+} */
